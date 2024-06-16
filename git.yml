@@ -1,9 +1,9 @@
 ---
 - hosts: all 
-  tasks:
   become: yes  
   gather_facts: yes
-  - name: install git 
+  tasks:
+  - name:  install git 
     yum:
      name: git   
      state: present  
