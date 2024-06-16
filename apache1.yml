@@ -1,0 +1,12 @@
+---
+- hosts: all 
+  become: yes 
+  tasks:
+  - name: stop apche2 service 
+    service:
+     name: httpd
+     state: stopped 
+  - name: uninstall   apche2
+    yum:
+     name: httpd  
+     state: absent 
