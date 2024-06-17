@@ -4,9 +4,9 @@
   tasks:
   - name: stop apche2 service 
     service:
-     name: httpd
+     name: "{{nywebpack}}"
      state: stopped 
   - name: uninstall   apche2
     yum:
-     name: httpd  
+     name: "{{nywebpack}}" 
      state: absent 
