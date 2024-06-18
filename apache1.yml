@@ -1,12 +1,12 @@
 ---
-- hosts: mywebserver
+- hosts: mywebservers
   become: yes 
   tasks:
   - name: install apache2 on redhat server  
     yum:
-     name: "{{nywebpack}}"
+     name: "{{mywebserverpack}}"
      state: present 
   - name: start apche2 service 
     service:
-     name: "{{nywebpack}}" 
+     name: "{{mywebserverpack}}" 
      state: started 
