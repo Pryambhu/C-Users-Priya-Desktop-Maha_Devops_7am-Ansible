@@ -7,7 +7,7 @@
     yum:
      name: "{{mywebserverpack}}"  
      state: present 
-  - name:  install httpd 
+  - name:  install tree
     yum: 
      name: "{{mywebpack}}"    
      state: present 
