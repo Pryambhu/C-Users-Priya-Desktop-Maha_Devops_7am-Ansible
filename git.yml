@@ -9,5 +9,5 @@
      state: present 
   - name:  install tree
     yum: 
-     name: "{{mywebpack}}"    
+     name: "{{mywebserverpackwget}}"    
      state: present 
