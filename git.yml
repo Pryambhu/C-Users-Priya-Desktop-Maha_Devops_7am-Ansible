@@ -6,4 +6,8 @@
   - name:  install git 
     yum:
      name: "{{mywebserverpack}}"  
-     state: present  
+     state: present 
+  - name:  install httpd 
+    yum: 
+     name: "{{mywebpack}}"    
+     state: present 

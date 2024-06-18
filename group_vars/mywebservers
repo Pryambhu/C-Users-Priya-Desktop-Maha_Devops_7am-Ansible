@@ -1,2 +1,3 @@
 ---
 mywebserverpack: git
+mywebserverpack: httpd 
