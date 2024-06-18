@@ -1,9 +1,9 @@
 ---
-- hosts: all 
+- hosts: mywebservers
   become: yes  
   gather_facts: yes
   tasks:
   - name:  install git 
     yum:
-     name: git   
+     name: "{{mywebserverpack}}"  
      state: present  
