@@ -3,7 +3,7 @@
    become: yes 
    tasks: 
    - name: display output of command 
-     command: hostname -f 
+     command: uname -r 
      register: myvariable 
    - name: i want to display output 
      debug: 
