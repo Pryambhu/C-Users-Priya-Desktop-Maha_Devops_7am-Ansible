@@ -1,0 +1,10 @@
+---  
+-  hosts: mywebserverpack  
+   become: yes 
+   tasks: 
+   - name: display output of command 
+     command: hostname -f 
+     register: myvariable 
+   - name: i want to display output 
+     debug: 
+      msg: "{{myvariable}}"     
