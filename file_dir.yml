@@ -9,5 +9,9 @@
   - name: create a file name priyambhu.txt
     file: 
      path: /maha/home/Priyambhu/priyambhu.txt
-     state: touch   
+     state: touch  
+  - name: change the mode  
+    file: 
+     path:  /maha/home/Priyambhu/priyambhu.txt
+     mode: 777    
      
