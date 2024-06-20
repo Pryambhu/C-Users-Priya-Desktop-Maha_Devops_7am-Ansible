@@ -1,0 +1,13 @@
+--- 
+- hosts: abc  
+  become: yes   
+  tasks:    
+  - name: create a directory 
+    file: 
+     path: /maha/home/Priyambhu
+     state: directory 
+  - name: create a file name priyambhu.txt
+    file: 
+     path: /maha/Priyambhu/priyambhu.txt
+     state: touch   
+     
