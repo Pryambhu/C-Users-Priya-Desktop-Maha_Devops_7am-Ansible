@@ -14,4 +14,6 @@
     file: 
      path:  /maha/home/Priyambhu/priyambhu.txt
      mode: 777    
+     owner: maha 
+     group: maha
      
