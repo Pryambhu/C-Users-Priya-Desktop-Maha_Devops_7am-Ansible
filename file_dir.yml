@@ -8,6 +8,6 @@
      state: directory 
   - name: create a file name priyambhu.txt
     file: 
-     path: /maha/Priyambhu/priyambhu.txt
+     path: /maha/home/Priyambhu/priyambhu.txt
      state: touch   
      
