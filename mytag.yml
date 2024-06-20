@@ -1,0 +1,15 @@
+---
+- hosts: abc
+  become: yes  
+  gather_facts: yes
+  tasks:
+  - name:  install git 
+    yum:
+     name: git
+     state: present
+    tags: mygit   
+  - name:  install tree
+    yum: 
+     name: tree   
+     state: present 
+    tags: mytree 
